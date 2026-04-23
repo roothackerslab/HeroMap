@@ -149,11 +149,6 @@ After first run, these files are created automatically:
 
 ---
 
-## 🔑 Keyboard Shortcuts
-
-- `[villain]` - Toggle villain mode (Easter egg)
-- `[ahsan]` - Unlock Code Explorer (Easter egg)
-
 ---
 
 ## ⚙️ System Requirements
