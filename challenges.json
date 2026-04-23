@@ -1,0 +1,154 @@
+{
+  "challenges": [
+    {
+      "id": "c001",
+      "category": "Encoding",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Base64 Basics",
+      "desc": "Decode this Base64 string and enter the hidden word:\n\n    SGVsbG9IYWNrZXI=",
+      "hint": "Use Python: import base64; base64.b64decode('SGVsbG9IYWNrZXI=').decode()",
+      "answer_hash": "ed69680fb545c1c98de2be46683c6272ab7242b884e65d36aeeb30917ffae0d4"
+    },
+    {
+      "id": "c002",
+      "category": "Encoding",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Hex Decoder",
+      "desc": "Decode this hex string (remove underscore first):\n\n    6374667b6865785f6973_66756e7d",
+      "hint": "Python: bytes.fromhex('yourhex').decode()",
+      "answer_hash": "a01960f367cc95da25f4aecc09c02e84a2aa063ca2739ba56e9e10247dadcc8e"
+    },
+    {
+      "id": "c003",
+      "category": "Crypto",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Caesar Cipher",
+      "desc": "Decrypt this ROT13 encoded text:\n\n    UNPXRE",
+      "hint": "ROT13 shifts each letter by 13 positions.",
+      "answer_hash": "e7d3685715939842749cc27b38d0ccb9706d4d14a5304ef9eee093780eab5df9"
+    },
+    {
+      "id": "c004",
+      "category": "Networking",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Port Knowledge",
+      "desc": "What is the default port number for HTTPS traffic?\n\n  Enter only the number.",
+      "hint": "HTTP is 80, HTTPS is HTTP but encrypted...",
+      "answer_hash": "6d05621ab7cb7b4fb796ca2ffbe1a141e0d4319d3deb6a05322b9de85d69b923"
+    },
+    {
+      "id": "c005",
+      "category": "Networking",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Subnet Math",
+      "desc": "Network: 192.168.1.0/24\n\n  How many USABLE host IPs does it have?\n  (Enter only the number)",
+      "hint": "Total = 2^(32-24). Subtract 2 for network + broadcast.",
+      "answer_hash": "9512d95d00d61bdec03d2b99d6ecc455ee5644ae52d10e7c4a61c93062dc97a3"
+    },
+    {
+      "id": "c006",
+      "category": "Networking",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "OSI Layer",
+      "desc": "The Transport layer is which OSI layer number?\n\n  (Enter only the number)",
+      "hint": "Mnemonic: Please Do Not Throw Sausage Pizza Away",
+      "answer_hash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "id": "c007",
+      "category": "Web Security",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "SQL Injection",
+      "desc": "Which payload bypasses a SQL login form?\n\n  a) ' OR '1'='1\n  b) <script>alert(1)</script>\n  c) ; DROP TABLE users;\n  d) ../../../etc/passwd\n\n  Enter the letter only.",
+      "hint": "This manipulates the WHERE clause to always be true.",
+      "answer_hash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+    },
+    {
+      "id": "c008",
+      "category": "Web Security",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "XSS Type",
+      "desc": "Which XSS type is stored in the database and hits every visitor?\n\n  a) Reflected XSS\n  b) Stored XSS\n  c) DOM XSS\n  d) Blind XSS\n\n  Enter the letter only.",
+      "hint": "Think: which one 'persists' on the server?",
+      "answer_hash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    {
+      "id": "c009",
+      "category": "Web Security",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "HTTP Security Header",
+      "desc": "Which HTTP header prevents clickjacking by blocking\n  the page from loading inside an iframe?\n\n  Enter the exact header name.",
+      "hint": "Starts with X- and contains the word 'Frame'.",
+      "answer_hash": "42b518f30640c6ac2481ba4fc07ee4781bac5415d9438bd35d59eb922623c06a"
+    },
+    {
+      "id": "c010",
+      "category": "Linux",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "File Permissions",
+      "desc": "What does 'chmod 777 file.txt' do?\n\n  a) Makes the file read-only\n  b) Full permissions to owner, group and others\n  c) Deletes the file\n  d) Encrypts the file\n\n  Enter the letter only.",
+      "hint": "7 in octal = 4(read) + 2(write) + 1(execute)",
+      "answer_hash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    {
+      "id": "c011",
+      "category": "Linux",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Find the Flag",
+      "desc": "What Linux command finds all files named 'flag.txt'\n  starting from the root directory?\n\n  Enter the exact command.",
+      "hint": "Use the 'find' command with the -name option.",
+      "answer_hash": "91fc253d0ddcd497288a52468e0517f173de020bd5baa4805b21673ed778424b"
+    },
+    {
+      "id": "c012",
+      "category": "Linux",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "SUID Bit Hunt",
+      "desc": "What command lists all SUID bit files\n  (common privilege escalation target)?\n\n  Enter the exact command.",
+      "hint": "Use 'find' with -perm and /4000. Start from /.",
+      "answer_hash": "32fa4964a77b0e5caed73d6f5f73326e2a40bc209b571053e1311e7548cf826f"
+    },
+    {
+      "id": "c013",
+      "category": "Tools",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Nmap SYN Scan",
+      "desc": "Which Nmap flag performs a SYN stealth scan?\n\n  Enter only the flag (e.g. -X)",
+      "hint": "Most popular scan type. '-s' + first letter of 'Syn'.",
+      "answer_hash": "9e0a827a2f2719143b9fc04ef08f461cdda31914fe4fb97c8577a1edded8787d"
+    },
+    {
+      "id": "c014",
+      "category": "Tools",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Wireshark Filter",
+      "desc": "In Wireshark, what display filter shows only HTTP traffic?\n\n  Enter the exact filter string.",
+      "hint": "Just the protocol name in lowercase.",
+      "answer_hash": "e0603c499aae47eb89343ad0ef3178e044c62e70ae2309b35591d1d49a3211ec"
+    },
+    {
+      "id": "c015",
+      "category": "Tools",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Burp Suite Tool",
+      "desc": "Which Burp Suite tool automatically crawls and scans\n  a web app for vulnerabilities?\n\n  Enter the tool name (one word).",
+      "hint": "It's the automated component \u2014 not Repeater or Intruder.",
+      "answer_hash": "6105d8625ada3c9bf514062b5696e9d7aa11e4b5e2c3d8629713f0bf2e45f6fd"
+    }
+  ]
+}

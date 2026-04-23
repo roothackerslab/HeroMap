@@ -1,0 +1,956 @@
+{
+  "phases": {
+    "1": {
+      "name": "IT & Networking Fundamentals",
+      "topics": {
+        "1": {
+          "name": "Computer Fundamentals",
+          "tools": [
+            {
+              "name": "CPU-Z",
+              "windows": "https://www.cpuid.com/softwares/cpu-z.html",
+              "linux": "https://www.cpuid.com/softwares/cpu-z.html",
+              "macos": "https://www.cpuid.com/softwares/cpu-z.html"
+            },
+            {
+              "name": "Speccy",
+              "windows": "https://www.ccleaner.com/speccy/download",
+              "linux": "https://www.ccleaner.com/speccy/download",
+              "macos": "https://www.ccleaner.com/speccy/download"
+            }
+          ]
+        },
+        "2": {
+          "name": "TCP/IP & OSI Model",
+          "tools": [
+            {
+              "name": "Wireshark",
+              "windows": "https://www.wireshark.org/download.html",
+              "macos": "https://www.wireshark.org/download.html",
+              "linux_cmd": "sudo apt install -y wireshark"
+            },
+            {
+              "name": "Cisco Packet Tracer",
+              "windows": "https://www.netacad.com/courses/packet-tracer",
+              "linux": "https://www.netacad.com/courses/packet-tracer",
+              "macos": "https://www.netacad.com/courses/packet-tracer"
+            }
+          ]
+        },
+        "3": {
+          "name": "Ports & Protocols",
+          "tools": [
+            {
+              "name": "Nmap",
+              "windows": "https://nmap.org/download.html#windows",
+              "macos": "https://nmap.org/download.html#macosx",
+              "linux_cmd": "sudo apt install -y nmap"
+            },
+            {
+              "name": "Netcat",
+              "windows": "https://eternallybored.org/misc/netcat/",
+              "macos": "https://netcat.sourceforge.net/",
+              "linux_cmd": "sudo apt install -y netcat"
+            }
+          ],
+          "tutorial": "https://youtu.be/e8iMt-VBPUU?si=4u5koNwfzZhwxSpV"
+        },
+        "4": {
+          "name": "IP Addressing & Subnetting",
+          "tools": [
+            {
+              "name": "Subnet Calculator",
+              "all": "https://www.subnet-calculator.com/"
+            },
+            {
+              "name": "ipcalc",
+              "windows": "https://jodies.de/ipcalc",
+              "macos": "https://jodies.de/ipcalc",
+              "linux_cmd": "sudo apt install -y ipcalc"
+            }
+          ],
+          "tutorial": "https://youtu.be/Pb6R1QCGMPY?si=qafuH7I_0T_uxVyT"
+        },
+        "5": {
+          "name": "DNS, DHCP, HTTP/HTTPS",
+          "tools": [
+            {
+              "name": "Wireshark",
+              "windows": "https://www.wireshark.org/download.html",
+              "macos": "https://www.wireshark.org/download.html",
+              "linux_cmd": "sudo apt install -y wireshark"
+            },
+            {
+              "name": "dig (DNS tool)",
+              "windows": "https://downloads.isc.org/isc/bind9/",
+              "macos": "https://linux.die.net/man/1/dig",
+              "linux_cmd": "sudo apt install -y dnsutils"
+            }
+          ],
+          "tutorial": "https://youtu.be/n7kYogsTkVo?si=s30JlkrL6HqjTo32"
+        },
+        "6": {
+          "name": "Kali Linux Basics",
+          "tools": [
+            {
+              "name": "Kali Linux",
+              "windows": "https://www.kali.org/get-kali/",
+              "macos": "https://www.kali.org/get-kali/",
+              "linux_cmd": "echo 'Already on Linux! Visit https://www.kali.org/get-kali/ for Kali'"
+            }
+          ],
+          "tutorial": "https://youtu.be/sm8bCHyTBNg?si=MqopjKtxtNTEJT8X"
+        }
+      },
+      "playlist": ""
+    },
+    "2": {
+      "name": "Programming & Scripting",
+      "topics": {
+        "1": {
+          "name": "HTML & CSS Basics",
+          "tools": [
+            {
+              "name": "VS Code",
+              "windows": "https://code.visualstudio.com/download",
+              "macos": "https://code.visualstudio.com/download",
+              "linux_cmd": "sudo snap install code --classic"
+            },
+            {
+              "name": "Firefox DevTools",
+              "all": "https://www.mozilla.org/en-US/firefox/new/",
+              "linux_cmd": "sudo apt install -y firefox"
+            }
+          ]
+        },
+        "2": {
+          "name": "JavaScript Basics",
+          "tools": [
+            {
+              "name": "VS Code",
+              "windows": "https://code.visualstudio.com/download",
+              "macos": "https://code.visualstudio.com/download",
+              "linux_cmd": "sudo snap install code --classic"
+            },
+            {
+              "name": "Node.js",
+              "windows": "https://nodejs.org/en/download/",
+              "macos": "https://nodejs.org/en/download/",
+              "linux_cmd": "sudo apt install -y nodejs npm"
+            }
+          ]
+        },
+        "3": {
+          "name": "Python for Hacking",
+          "tools": [
+            {
+              "name": "Python 3",
+              "windows": "https://www.python.org/downloads/",
+              "macos": "https://www.python.org/downloads/",
+              "linux_cmd": "sudo apt install -y python3 python3-pip"
+            },
+            {
+              "name": "PyCharm",
+              "windows": "https://www.jetbrains.com/pycharm/download/",
+              "macos": "https://www.jetbrains.com/pycharm/download/",
+              "linux_cmd": "sudo snap install pycharm-community --classic"
+            }
+          ]
+        },
+        "4": {
+          "name": "Bash Scripting",
+          "tools": [
+            {
+              "name": "Git Bash",
+              "windows": "https://git-scm.com/downloads",
+              "macos": "https://www.gnu.org/software/bash/",
+              "linux_cmd": "sudo apt install -y git"
+            },
+            {
+              "name": "ShellCheck",
+              "all": "https://www.shellcheck.net/",
+              "linux_cmd": "sudo apt install -y shellcheck"
+            }
+          ]
+        },
+        "5": {
+          "name": "Basic SQL",
+          "tools": [
+            {
+              "name": "DB Browser for SQLite",
+              "windows": "https://sqlitebrowser.org/dl/",
+              "macos": "https://sqlitebrowser.org/dl/",
+              "linux_cmd": "sudo apt install -y sqlitebrowser"
+            },
+            {
+              "name": "MySQL Workbench",
+              "windows": "https://dev.mysql.com/downloads/workbench/",
+              "macos": "https://dev.mysql.com/downloads/workbench/",
+              "linux_cmd": "sudo apt install -y mysql-workbench"
+            }
+          ]
+        }
+      },
+      "playlist": "https://drive.google.com/drive/folders/1wUDoIye4AB-brXasstZvXMaPuT7BN_fk"
+    },
+    "3": {
+      "name": "Cybersecurity & Ethical Hacking Basics",
+      "topics": {
+        "1": {
+          "name": "CIA Triad & Core Concepts",
+          "tools": [
+            {
+              "name": "OWASP WebGoat",
+              "all": "https://owasp.org/www-project-webgoat/",
+              "linux_cmd": "docker pull webgoat/goat-and-wolf"
+            }
+          ]
+        },
+        "2": {
+          "name": "Types of Hackers & Hacking",
+          "tools": [
+            {
+              "name": "TryHackMe",
+              "all": "https://tryhackme.com/"
+            }
+          ]
+        },
+        "3": {
+          "name": "Vulnerabilities vs Exploits",
+          "tools": [
+            {
+              "name": "CVE Details",
+              "all": "https://www.cvedetails.com/"
+            },
+            {
+              "name": "NVD - National Vulnerability Database",
+              "all": "https://nvd.nist.gov/"
+            }
+          ]
+        },
+        "4": {
+          "name": "OWASP Top 10",
+          "tools": [
+            {
+              "name": "OWASP Top 10 Docs",
+              "all": "https://owasp.org/www-project-top-ten/"
+            },
+            {
+              "name": "DVWA",
+              "all": "https://dvwa.co.uk/",
+              "linux_cmd": "docker pull vulnerables/web-dvwa"
+            }
+          ]
+        },
+        "5": {
+          "name": "XSS, SQLi & Auth Flaws",
+          "tools": [
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            },
+            {
+              "name": "DVWA",
+              "all": "https://dvwa.co.uk/",
+              "linux_cmd": "docker pull vulnerables/web-dvwa"
+            }
+          ]
+        },
+        "6": {
+          "name": "IDOR & Business Logic Flaws",
+          "tools": [
+            {
+              "name": "PortSwigger Web Academy",
+              "all": "https://portswigger.net/web-security"
+            },
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            }
+          ]
+        }
+      },
+      "playlist": "https://drive.google.com/drive/folders/1fs0HwmFdY451TlREy2rmN1yzSRV_GdVw"
+    },
+    "4": {
+      "name": "Tools Mastery",
+      "topics": {
+        "1": {
+          "name": "Nmap - Network Scanner",
+          "tools": [
+            {
+              "name": "Nmap",
+              "windows": "https://nmap.org/download.html#windows",
+              "macos": "https://nmap.org/download.html#macosx",
+              "linux_cmd": "sudo apt install -y nmap"
+            },
+            {
+              "name": "Zenmap (Nmap GUI)",
+              "windows": "https://nmap.org/zenmap/",
+              "macos": "https://nmap.org/zenmap/",
+              "linux_cmd": "sudo apt install -y zenmap"
+            }
+          ],
+          "tutorial": "https://youtu.be/4t4kBkMsDbQ?si=GVGoIirUNkmsICfg"
+        },
+        "2": {
+          "name": "Burp Suite / OWASP ZAP",
+          "tools": [
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            },
+            {
+              "name": "OWASP ZAP",
+              "windows": "https://www.zaproxy.org/download/",
+              "macos": "https://www.zaproxy.org/download/",
+              "linux_cmd": "sudo apt install -y zaproxy"
+            }
+          ],
+          "tutorial": "https://www.youtube.com/live/rae9ZKEeKms?si=FuPcqonCPOWPJ02a"
+        },
+        "3": {
+          "name": "Metasploit Framework",
+          "tools": [
+            {
+              "name": "Metasploit",
+              "windows": "https://www.metasploit.com/download",
+              "macos": "https://www.metasploit.com/download",
+              "linux_cmd": "curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && sudo ./msfinstall"
+            },
+            {
+              "name": "Kali Linux (has Metasploit)",
+              "all": "https://www.kali.org/get-kali/"
+            }
+          ],
+          "tutorial": "https://youtu.be/xuYZNJCvHgQ?si=Q-0MhyysldBZuUIS"
+        },
+        "4": {
+          "name": "Hydra, John & Hashcat",
+          "tools": [
+            {
+              "name": "Hashcat",
+              "windows": "https://hashcat.net/hashcat/",
+              "macos": "https://hashcat.net/hashcat/",
+              "linux_cmd": "sudo apt install -y hashcat"
+            },
+            {
+              "name": "John the Ripper",
+              "windows": "https://www.openwall.com/john/",
+              "macos": "https://www.openwall.com/john/",
+              "linux_cmd": "sudo apt install -y john"
+            },
+            {
+              "name": "THC Hydra",
+              "windows": "https://github.com/vanhauser-thc/thc-hydra",
+              "macos": "https://github.com/vanhauser-thc/thc-hydra",
+              "linux_cmd": "sudo apt install -y hydra"
+            }
+          ],
+          "tutorial": "https://youtu.be/z4_oqTZJqCo?si=n0uh12wqTDdJqbA9",
+          "tool_tutorials": {
+            "Hashcat": "https://youtu.be/z4_oqTZJqCo?si=n0uh12wqTDdJqbA9",
+            "THC Hydra": "https://youtu.be/kadJLB2rYWo?si=fI9bBQae_srpWiIT",
+            "John the Ripper": "https://youtu.be/frL21o37klM?si=Tyd9eevL-Bu6X4bo"
+          }
+        },
+        "5": {
+          "name": "Aircrack-ng (WiFi Security)",
+          "tools": [
+            {
+              "name": "Aircrack-ng",
+              "windows": "https://www.aircrack-ng.org/downloads.html",
+              "macos": "https://www.aircrack-ng.org/downloads.html",
+              "linux_cmd": "sudo apt install -y aircrack-ng"
+            }
+          ],
+          "tutorial": "https://youtu.be/WfYxrLaqlN8?si=UAqccxuscsLQIEVG"
+        }
+      },
+      "playlist": ""
+    },
+    "5": {
+      "name": "Web Application Penetration Testing",
+      "topics": {
+        "1": {
+          "name": "Auth & Authorization Flaws",
+          "tools": [
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            },
+            {
+              "name": "PortSwigger Web Academy",
+              "all": "https://portswigger.net/web-security/authentication"
+            }
+          ]
+        },
+        "2": {
+          "name": "SQL Injection (Advanced)",
+          "tools": [
+            {
+              "name": "SQLmap",
+              "linux": "https://sqlmap.org/",
+              "windows": "https://sqlmap.org/",
+              "macos": "https://sqlmap.org/"
+            },
+            {
+              "name": "DVWA",
+              "all": "https://dvwa.co.uk/",
+              "linux_cmd": "docker pull vulnerables/web-dvwa"
+            }
+          ]
+        },
+        "3": {
+          "name": "XSS & CSRF",
+          "tools": [
+            {
+              "name": "XSStrike",
+              "all": "https://github.com/s0md3v/XSStrike"
+            },
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            }
+          ]
+        },
+        "4": {
+          "name": "File Upload Vulnerabilities",
+          "tools": [
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            },
+            {
+              "name": "DVWA",
+              "all": "https://dvwa.co.uk/",
+              "linux_cmd": "docker pull vulnerables/web-dvwa"
+            }
+          ]
+        },
+        "5": {
+          "name": "Command Injection",
+          "tools": [
+            {
+              "name": "Commix",
+              "windows": "https://github.com/commixproject/commix",
+              "macos": "https://github.com/commixproject/commix",
+              "linux_cmd": "sudo apt install -y commix"
+            },
+            {
+              "name": "PortSwigger Web Academy",
+              "all": "https://portswigger.net/web-security/os-command-injection"
+            }
+          ]
+        },
+        "6": {
+          "name": "Business Logic Flaws",
+          "tools": [
+            {
+              "name": "PortSwigger Web Academy",
+              "all": "https://portswigger.net/web-security/logic-flaws"
+            },
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            }
+          ]
+        }
+      },
+      "playlist": "https://tinyurl.com/yjf5frxy"
+    },
+    "6": {
+      "name": "Network & System Penetration Testing",
+      "topics": {
+        "1": {
+          "name": "Enumeration Techniques",
+          "tools": [
+            {
+              "name": "Nmap",
+              "windows": "https://nmap.org/download.html#windows",
+              "macos": "https://nmap.org/download.html#macosx",
+              "linux_cmd": "sudo apt install -y nmap"
+            },
+            {
+              "name": "Enum4linux",
+              "linux": "https://github.com/CiscoCXSecurity/enum4linux",
+              "windows": "https://github.com/CiscoCXSecurity/enum4linux",
+              "macos": "https://github.com/CiscoCXSecurity/enum4linux"
+            }
+          ]
+        },
+        "2": {
+          "name": "SMB, FTP & SSH Attacks",
+          "tools": [
+            {
+              "name": "THC Hydra",
+              "windows": "https://github.com/vanhauser-thc/thc-hydra",
+              "macos": "https://github.com/vanhauser-thc/thc-hydra",
+              "linux_cmd": "sudo apt install -y hydra"
+            },
+            {
+              "name": "Metasploit",
+              "windows": "https://www.metasploit.com/download",
+              "macos": "https://www.metasploit.com/download",
+              "linux_cmd": "curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && sudo ./msfinstall"
+            }
+          ]
+        },
+        "3": {
+          "name": "Privilege Escalation - Linux",
+          "tools": [
+            {
+              "name": "LinPEAS",
+              "windows": "https://github.com/carlospolop/PEASS-ng/releases",
+              "macos": "https://github.com/carlospolop/PEASS-ng/releases",
+              "linux_cmd": "curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o linpeas.sh && chmod +x linpeas.sh"
+            },
+            {
+              "name": "GTFOBins",
+              "all": "https://gtfobins.github.io/"
+            }
+          ]
+        },
+        "4": {
+          "name": "Privilege Escalation - Windows",
+          "tools": [
+            {
+              "name": "WinPEAS",
+              "windows": "https://github.com/carlospolop/PEASS-ng/releases",
+              "linux": "https://github.com/carlospolop/PEASS-ng/releases",
+              "macos": "https://github.com/carlospolop/PEASS-ng/releases"
+            },
+            {
+              "name": "LOLBAS",
+              "all": "https://lolbas-project.github.io/"
+            }
+          ]
+        },
+        "5": {
+          "name": "Password Attacks",
+          "tools": [
+            {
+              "name": "Hashcat",
+              "windows": "https://hashcat.net/hashcat/",
+              "macos": "https://hashcat.net/hashcat/",
+              "linux_cmd": "sudo apt install -y hashcat"
+            },
+            {
+              "name": "John the Ripper",
+              "windows": "https://www.openwall.com/john/",
+              "macos": "https://www.openwall.com/john/",
+              "linux_cmd": "sudo apt install -y john"
+            },
+            {
+              "name": "SecLists (Wordlists)",
+              "all": "https://github.com/danielmiessler/SecLists"
+            }
+          ]
+        }
+      },
+      "playlist": "https://drive.google.com/drive/folders/11JpMnLJcIMHw8M7v4MHhNB1LGUkYzWVE"
+    },
+    "7": {
+      "name": "Bug Bounty Roadmap",
+      "topics": {
+        "1": {
+          "name": "Choosing Bug Bounty Platforms",
+          "tools": [
+            {
+              "name": "HackerOne",
+              "all": "https://www.hackerone.com/"
+            },
+            {
+              "name": "Bugcrowd",
+              "all": "https://www.bugcrowd.com/"
+            },
+            {
+              "name": "Intigriti",
+              "all": "https://www.intigriti.com/"
+            }
+          ]
+        },
+        "2": {
+          "name": "Recon - Subdomains & Endpoints",
+          "tools": [
+            {
+              "name": "Subfinder",
+              "all": "https://github.com/projectdiscovery/subfinder",
+              "linux_cmd": "go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest"
+            },
+            {
+              "name": "Amass",
+              "all": "https://github.com/owasp-amass/amass",
+              "linux_cmd": "sudo apt install -y amass"
+            },
+            {
+              "name": "httpx",
+              "all": "https://github.com/projectdiscovery/httpx",
+              "linux_cmd": "go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest"
+            }
+          ]
+        },
+        "3": {
+          "name": "Attack Surface Mapping",
+          "tools": [
+            {
+              "name": "Shodan",
+              "all": "https://www.shodan.io/"
+            },
+            {
+              "name": "Censys",
+              "all": "https://censys.io/"
+            },
+            {
+              "name": "waybackurls",
+              "all": "https://github.com/tomnomnom/waybackurls"
+            }
+          ]
+        },
+        "4": {
+          "name": "Vulnerability Testing",
+          "tools": [
+            {
+              "name": "Burp Suite Community",
+              "windows": "https://portswigger.net/burp/communitydownload",
+              "macos": "https://portswigger.net/burp/communitydownload",
+              "linux_cmd": "sudo apt install -y burpsuite"
+            },
+            {
+              "name": "Nuclei",
+              "all": "https://github.com/projectdiscovery/nuclei",
+              "linux_cmd": "go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest"
+            }
+          ]
+        },
+        "5": {
+          "name": "Writing Bug Bounty Reports",
+          "tools": [
+            {
+              "name": "HackerOne Docs",
+              "all": "https://docs.hackerone.com/hackers/submitting-reports.html"
+            },
+            {
+              "name": "Markdown Editor",
+              "all": "https://dillinger.io/"
+            }
+          ]
+        }
+      },
+      "playlist": "https://tinyurl.com/y7ntff2m"
+    },
+    "8": {
+      "name": "OSINT Module",
+      "topics": {
+        "1": {
+          "name": "OSINT Fundamentals & Ethics",
+          "tools": [
+            {
+              "name": "OSINT Framework",
+              "all": "https://osintframework.com/"
+            }
+          ]
+        },
+        "2": {
+          "name": "Google Dorking",
+          "tools": [
+            {
+              "name": "Google Hacking DB",
+              "all": "https://www.exploit-db.com/google-hacking-database"
+            },
+            {
+              "name": "DorkSearch",
+              "all": "https://dorksearch.com/"
+            }
+          ]
+        },
+        "3": {
+          "name": "Username & Social Media Tracking",
+          "tools": [
+            {
+              "name": "Sherlock",
+              "all": "https://github.com/sherlock-project/sherlock",
+              "linux_cmd": "pip3 install sherlock-project"
+            },
+            {
+              "name": "Namechk",
+              "all": "https://namechk.com/"
+            },
+            {
+              "name": "WhatsMyName",
+              "all": "https://whatsmyname.app/",
+              "linux_cmd": "git clone https://github.com/WebBreacher/WhatsMyName.git"
+            }
+          ]
+        },
+        "4": {
+          "name": "Email Discovery",
+          "tools": [
+            {
+              "name": "Hunter.io",
+              "all": "https://hunter.io/"
+            },
+            {
+              "name": "theHarvester",
+              "windows": "https://github.com/laramies/theHarvester",
+              "macos": "https://github.com/laramies/theHarvester",
+              "linux_cmd": "sudo apt install -y theharvester"
+            }
+          ]
+        },
+        "5": {
+          "name": "Passive vs Active Recon",
+          "tools": [
+            {
+              "name": "Maltego CE",
+              "all": "https://www.maltego.com/downloads/",
+              "linux_cmd": "sudo apt install -y maltego"
+            },
+            {
+              "name": "Recon-ng",
+              "windows": "https://github.com/lanmaster53/recon-ng",
+              "macos": "https://github.com/lanmaster53/recon-ng",
+              "linux_cmd": "sudo apt install -y recon-ng"
+            }
+          ]
+        }
+      },
+      "playlist": "https://drive.google.com/drive/folders/1j97ncaAQhADephGOwEQI35GileH9_aDq"
+    },
+    "9": {
+      "name": "Ransomware & Malware Basics",
+      "topics": {
+        "1": {
+          "name": "What is Ransomware?",
+          "tools": [
+            {
+              "name": "MalwareBazaar",
+              "all": "https://bazaar.abuse.ch/"
+            },
+            {
+              "name": "Any.run Sandbox",
+              "all": "https://any.run/"
+            }
+          ]
+        },
+        "2": {
+          "name": "Ransomware Types & Examples",
+          "tools": [
+            {
+              "name": "ID Ransomware",
+              "all": "https://id-ransomware.malwarehunterteam.com/"
+            },
+            {
+              "name": "VirusTotal",
+              "all": "https://www.virustotal.com/"
+            }
+          ]
+        },
+        "3": {
+          "name": "Attack Vectors & Lifecycle",
+          "tools": [
+            {
+              "name": "MITRE ATT&CK",
+              "all": "https://attack.mitre.org/"
+            },
+            {
+              "name": "Any.run Sandbox",
+              "all": "https://any.run/"
+            }
+          ]
+        },
+        "4": {
+          "name": "Detection & Defense",
+          "tools": [
+            {
+              "name": "Autoruns (Sysinternals)",
+              "windows": "https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns",
+              "linux": "https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns",
+              "macos": "https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns"
+            },
+            {
+              "name": "Process Hacker",
+              "windows": "https://processhacker.sourceforge.io/downloads.php",
+              "linux": "https://processhacker.sourceforge.io/downloads.php",
+              "macos": "https://processhacker.sourceforge.io/downloads.php"
+            }
+          ]
+        }
+      },
+      "playlist": "https://drive.google.com/drive/folders/10vmu7VmQX4Xr84VZo2FgSO2JKtitsZFW"
+    },
+    "10": {
+      "name": "Practice & Labs",
+      "topics": {
+        "1": {
+          "name": "TryHackMe",
+          "tools": [
+            {
+              "name": "TryHackMe",
+              "all": "https://tryhackme.com/"
+            },
+            {
+              "name": "TryHackMe Learning Paths",
+              "all": "https://tryhackme.com/paths"
+            }
+          ],
+          "tutorial": "https://youtu.be/AcHK0nNXtgo?si=tlpgDg27J4ISP1S_"
+        },
+        "2": {
+          "name": "Hack The Box",
+          "tools": [
+            {
+              "name": "Hack The Box",
+              "all": "https://www.hackthebox.com/"
+            },
+            {
+              "name": "HTB Academy",
+              "all": "https://academy.hackthebox.com/"
+            }
+          ],
+          "tutorial": "https://youtu.be/jccqNN1jOgE?si=10zyFNhMdF87woK8"
+        },
+        "3": {
+          "name": "PortSwigger Web Security Academy",
+          "tools": [
+            {
+              "name": "PortSwigger Labs",
+              "all": "https://portswigger.net/web-security/all-labs"
+            }
+          ]
+        },
+        "4": {
+          "name": "CTF Competitions",
+          "tools": [
+            {
+              "name": "CTFtime",
+              "all": "https://ctftime.org/"
+            },
+            {
+              "name": "PicoCTF",
+              "all": "https://picoctf.org/"
+            },
+            {
+              "name": "OverTheWire",
+              "all": "https://overthewire.org/wargames/"
+            }
+          ]
+        },
+        "5": {
+          "name": "Home Lab Setup",
+          "tools": [
+            {
+              "name": "VirtualBox",
+              "windows": "https://www.virtualbox.org/wiki/Downloads",
+              "macos": "https://www.virtualbox.org/wiki/Downloads",
+              "linux_cmd": "sudo apt install -y virtualbox"
+            },
+            {
+              "name": "Kali Linux",
+              "all": "https://www.kali.org/get-kali/"
+            },
+            {
+              "name": "VMware Workstation Player",
+              "windows": "https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html",
+              "linux": "https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html",
+              "macos": "https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html"
+            }
+          ]
+        }
+      },
+      "playlist": ""
+    },
+    "11": {
+      "name": "Certifications & Career Path",
+      "topics": {
+        "1": {
+          "name": "eJPT Certification",
+          "tools": [
+            {
+              "name": "eJPT - INE Security",
+              "all": "https://security.ine.com/certifications/ejpt-certification/"
+            },
+            {
+              "name": "INE Free Starter Pass",
+              "all": "https://my.ine.com/"
+            }
+          ],
+          "tutorial": "https://youtu.be/fkMeisXS6B4?si=M5NoTYMp78u6MCwI"
+        },
+        "2": {
+          "name": "CEH Certification",
+          "tools": [
+            {
+              "name": "EC-Council CEH",
+              "all": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/"
+            }
+          ]
+        },
+        "3": {
+          "name": "OSCP Certification",
+          "tools": [
+            {
+              "name": "Offensive Security",
+              "all": "https://www.offsec.com/courses/pen-200/"
+            },
+            {
+              "name": "TJnull OSCP Prep List",
+              "all": "https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/"
+            }
+          ]
+        },
+        "4": {
+          "name": "Career Options & Portfolio",
+          "tools": [
+            {
+              "name": "GitHub",
+              "all": "https://github.com/",
+              "linux_cmd": "sudo apt install -y git"
+            },
+            {
+              "name": "LinkedIn",
+              "all": "https://www.linkedin.com/"
+            },
+            {
+              "name": "HackerOne Profile",
+              "all": "https://www.hackerone.com/"
+            }
+          ]
+        },
+        "5": {
+          "name": "Write Reports & Blogs",
+          "tools": [
+            {
+              "name": "Medium",
+              "all": "https://medium.com/"
+            },
+            {
+              "name": "Notion",
+              "all": "https://www.notion.so/",
+              "linux_cmd": "sudo snap install notion-snap"
+            },
+            {
+              "name": "GitHub Pages",
+              "all": "https://pages.github.com/"
+            }
+          ]
+        }
+      },
+      "playlist": ""
+    }
+  }
+}

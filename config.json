@@ -1,0 +1,28 @@
+{
+  "app_name": "Roothackerslab Tool",
+  "version": "1.0.0",
+  "author": "ZeroTraceX",
+  "community": "Roothackerslab",
+
+  "theme": {
+    "color": "green",
+    "ui_mode": "hacker"
+  },
+
+  "paths": {
+    "data_file": "data.json",
+    "log_file": "logs.txt"
+  },
+
+  "settings": {
+    "auto_update": true,
+    "debug_mode": false,
+    "show_banner": true
+  },
+
+  "features": {
+    "installer": true,
+    "one_click_run": true,
+    "ui_mode": "fancy"
+  }
+}
