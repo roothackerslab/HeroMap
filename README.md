@@ -1,7 +1,7 @@
 # HeroMap
 # 🚀 RootHackersLab - Zero to Hero Hacking Roadmap
 
-**Powered by Roothackerslab | Developed by ZeroTraceX**
+**Powered by Roothackerslab | Developed by Mughal__Hacker**
 
 ---
 
