@@ -147,8 +147,358 @@
       "points": 30,
       "title": "Burp Suite Tool",
       "desc": "Which Burp Suite tool automatically crawls and scans\n  a web app for vulnerabilities?\n\n  Enter the tool name (one word).",
-      "hint": "It's the automated component \u2014 not Repeater or Intruder.",
+      "hint": "It's the automated component — not Repeater or Intruder.",
       "answer_hash": "6105d8625ada3c9bf514062b5696e9d7aa11e4b5e2c3d8629713f0bf2e45f6fd"
+    },
+    {
+      "id": "c016",
+      "category": "Encoding",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Binary to Text",
+      "desc": "Convert this binary to readable text:\n\n    01000111 01101111 01101111 01100100",
+      "hint": "Each 8 bits = 1 ASCII character. Use Python: int('01000111',2)",
+      "answer_hash": "770e607624d689265ca6c44884d0807d9b054d23c473c106c72be9de08b7376c"
+    },
+    {
+      "id": "c017",
+      "category": "Encoding",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "URL Decode",
+      "desc": "Decode this URL-encoded string:\n\n    %48%61%63%6B%65%72",
+      "hint": "Python: from urllib.parse import unquote; unquote('%48%61%63%6B%65%72')",
+      "answer_hash": "e7d3685715939842749cc27b38d0ccb9706d4d14a5304ef9eee093780eab5df9"
+    },
+    {
+      "id": "c018",
+      "category": "Encoding",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Base32 Decode",
+      "desc": "Decode this Base32 string:\n\n    JBSWY3DPEB3W64TMMQ======",
+      "hint": "Python: import base64; base64.b32decode('JBSWY3DPEB3W64TMMQ======').decode()",
+      "answer_hash": "936a185caaa266bb9cbe981e9e05cb78cd732b0b3280eb944412bb6f8f8f07af"
+    },
+    {
+      "id": "c019",
+      "category": "Encoding",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Hex to ASCII",
+      "desc": "Convert this hex to ASCII:\n\n    726f6f74",
+      "hint": "Python: bytes.fromhex('726f6f74').decode()",
+      "answer_hash": "4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2"
+    },
+    {
+      "id": "c020",
+      "category": "Encoding",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Double Encoded",
+      "desc": "This string is Base64 encoded TWICE. Decode it:\n\n    Wm05dlpBPT0=",
+      "hint": "Decode Base64 once, then decode the result again.",
+      "answer_hash": "4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2"
+    },
+    {
+      "id": "c021",
+      "category": "Crypto",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "MD5 Length",
+      "desc": "How many characters long is an MD5 hash?\n\n  Enter only the number.",
+      "hint": "MD5 produces 128 bits. 128 / 4 = hex digits.",
+      "answer_hash": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
+    },
+    {
+      "id": "c022",
+      "category": "Crypto",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Vigenere Key",
+      "desc": "In a Vigenere cipher, what is the KEY used for?\n\n  a) Shifting letters by a fixed number\n  b) Shifting letters by different amounts using a keyword\n  c) Replacing letters with numbers\n  d) Reversing the alphabet\n\n  Enter the letter only.",
+      "hint": "Vigenere uses a repeating keyword, unlike Caesar which uses one shift.",
+      "answer_hash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    {
+      "id": "c023",
+      "category": "Crypto",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Hash This",
+      "desc": "What is the SHA256 hash of the word:\n\n    password\n\n  Enter only the first 8 characters of the hash.",
+      "hint": "Python: import hashlib; hashlib.sha256(b'password').hexdigest()[:8]",
+      "answer_hash": "c6682e8101d6aa8aa8c7e1ad990820bd5362526dabccfb640f05b901e644fd10"
+    },
+    {
+      "id": "c024",
+      "category": "Crypto",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Symmetric or Not",
+      "desc": "Which of these is an ASYMMETRIC encryption algorithm?\n\n  a) AES\n  b) DES\n  c) RSA\n  d) Blowfish\n\n  Enter the letter only.",
+      "hint": "Asymmetric = uses a public and private key pair.",
+      "answer_hash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": "c025",
+      "category": "Crypto",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Atbash Cipher",
+      "desc": "Decrypt this Atbash encoded text:\n\n    SVOOLS\n\n  (Atbash: A=Z, B=Y, C=X ...)",
+      "hint": "Map each letter: S→H, V→E, O→L, O→L, L→O, S→H",
+      "answer_hash": "d0bc381952d0827f36467818a9560eb5eb6fda8a64a422aa21fcda3f2263e8b4"
+    },
+    {
+      "id": "c026",
+      "category": "Networking",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "DNS Record Type",
+      "desc": "Which DNS record type maps a domain name to an IPv4 address?\n\n  Enter the record type (e.g. MX, CNAME, etc.)",
+      "hint": "It's a single letter. The most basic DNS record.",
+      "answer_hash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+    },
+    {
+      "id": "c027",
+      "category": "Networking",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Default SSH Port",
+      "desc": "What is the default port for SSH?\n\n  Enter only the number.",
+      "hint": "It's lower than 30. Think: secure shell.",
+      "answer_hash": "785f3ec7eb32f30b90cd0fcf3657d388b5ff4297f2f9716ff66e9b69c05ddd09"
+    },
+    {
+      "id": "c028",
+      "category": "Networking",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "TCP Handshake",
+      "desc": "What are the 3 steps of the TCP three-way handshake?\n\n  Enter them separated by dashes (e.g. X-Y-Z)",
+      "hint": "SYN, SYN-ACK, ACK — just the first word of each step.",
+      "answer_hash": "7aca7e6ed88f00671cc4bc208ee8ca3de21d10d630d7be191df99a29416053f3"
+    },
+    {
+      "id": "c029",
+      "category": "Networking",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Subnet Hosts",
+      "desc": "Network: 10.0.0.0/28\n\n  How many USABLE host IPs does it have?\n  (Enter only the number)",
+      "hint": "2^(32-28) = 16 total. Subtract 2.",
+      "answer_hash": "8527a891e224136950ff32ca212b45bc93f69fbb801c3b1ebedac52775f99e61"
+    },
+    {
+      "id": "c030",
+      "category": "Web Security",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "HTTP Method",
+      "desc": "Which HTTP method is used to SEND data to a server\n  (e.g. submitting a login form)?\n\n  Enter the method name.",
+      "hint": "Not GET. Think: you are POSTing data.",
+      "answer_hash": "72231043bc1807e6f740b235eb7511ecb33255a6a375435631196de8a9750d4b"
+    },
+    {
+      "id": "c031",
+      "category": "Web Security",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Cookie Flag",
+      "desc": "Which cookie flag prevents JavaScript from accessing\n  the cookie (protects against XSS theft)?\n\n  Enter the exact flag name.",
+      "hint": "It means the cookie is only for HTTP, not scripts.",
+      "answer_hash": "33d8ce420e65b03cd89a4de87decd82e0c0358e10e96a31738ee16f0c41059b6"
+    },
+    {
+      "id": "c032",
+      "category": "Web Security",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Status Code",
+      "desc": "What HTTP status code means 'Forbidden'?\n  (You are authenticated but not allowed)\n\n  Enter only the number.",
+      "hint": "4xx range. Not 401 (that's Unauthorized).",
+      "answer_hash": "d26eae87829adde551bf4b852f9da6b8c3c2db9b65b8b68870632a2db5f53e00"
+    },
+    {
+      "id": "c033",
+      "category": "Web Security",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "LFI Path",
+      "desc": "Which path traversal string is commonly used\n  to read /etc/passwd in an LFI attack?\n\n  Enter exactly as typed.",
+      "hint": "Go up directories using ../ repeated. Usually 5-6 times.",
+      "answer_hash": "7383528876e4f41de63068f3ae17e8af6d71d36c9a26df7c61908dc41c0ce35c"
+    },
+    {
+      "id": "c034",
+      "category": "Linux",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Current User",
+      "desc": "Which Linux command shows the currently logged-in username?\n\n  Enter the exact command.",
+      "hint": "3 letters. Who am I?",
+      "answer_hash": "f25297859cf0a70af5c053a5464a5fa647a35ceee1d91397331903846d79ffc1"
+    },
+    {
+      "id": "c035",
+      "category": "Linux",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "List Hidden Files",
+      "desc": "Which flag with 'ls' shows hidden files (files starting with dot)?\n\n  Enter only the flag (e.g. -x)",
+      "hint": "Hidden files start with '.'. Use ls with this flag to show ALL files.",
+      "answer_hash": "c274891790345c56cef3b53c026bdc48150948fa60c56306073d6fea7766ad6a"
+    },
+    {
+      "id": "c036",
+      "category": "Linux",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Crontab Backdoor",
+      "desc": "Which file/command do attackers modify to\n  persist a backdoor on Linux via scheduled tasks?\n\n  Enter the command name only.",
+      "hint": "It schedules recurring tasks. Think: cron + tab.",
+      "answer_hash": "a67a6ade2e900a46b512ce4d22012f5f46c8d9c2be0df06969aa8aef8883b923"
+    },
+    {
+      "id": "c037",
+      "category": "Linux",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Read Shadow File",
+      "desc": "What command reads the /etc/shadow file content\n  and displays it in terminal?\n\n  Enter the exact command.",
+      "hint": "Simplest way to print file content in Linux. cat + path.",
+      "answer_hash": "71a8bd3ffcd67b15a0ab60541540d46202d29cdaee09672d738fed81550828e3"
+    },
+    {
+      "id": "c038",
+      "category": "Tools",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Nmap OS Detection",
+      "desc": "Which Nmap flag enables OS detection?\n\n  Enter only the flag (e.g. -X)",
+      "hint": "Capital letter. O for OS.",
+      "answer_hash": "29272c47115b5a93be87e3a9d8739fb2e8a1fea6aa31852af190389734c51946"
+    },
+    {
+      "id": "c039",
+      "category": "Tools",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Metasploit Console",
+      "desc": "What command launches the Metasploit Framework console?\n\n  Enter the exact command.",
+      "hint": "MSF + console. Short command.",
+      "answer_hash": "95386cc5ac4337788d0c87094094d704dcc662d6f39f8fa9958b7e3a2fd9e2d0"
+    },
+    {
+      "id": "c040",
+      "category": "Tools",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Gobuster Mode",
+      "desc": "Which Gobuster mode is used for directory brute-forcing?\n\n  Enter the mode name only.",
+      "hint": "You are busting directories. Mode = dir.",
+      "answer_hash": "2b64c6d9afd8a34ed0dbf35f7de171a8825a50d9f42f05e98fe2b1addf00ab44"
+    },
+    {
+      "id": "c041",
+      "category": "Tools",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "SQLMap Target Flag",
+      "desc": "Which SQLMap flag specifies the target URL?\n\n  Enter only the flag (e.g. -x)",
+      "hint": "URL → U. Short flag.",
+      "answer_hash": "99f14531f2599afdb9ace38c18c10740fd29ca1bdcdb7d0460fd799001d567bd"
+    },
+    {
+      "id": "c042",
+      "category": "Tools",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Hydra SSH Brute",
+      "desc": "Complete this Hydra command to brute-force SSH\n  on 192.168.1.1 with user 'admin' and rockyou wordlist:\n\n  hydra -l admin ___ -t 4 ssh://192.168.1.1\n\n  Enter only the missing part.",
+      "hint": "Flag for password list/wordlist. -P then the path.",
+      "answer_hash": "13f7ff6445e336afad6a7776f0f1279dee23b4b8ff94f2a3f26e49a9a0f4b05f"
+    },
+    {
+      "id": "c043",
+      "category": "OSINT",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Google Dork — Site",
+      "desc": "Which Google dork operator limits search results\n  to a specific website?\n\n  Enter only the operator (e.g. xyz:)",
+      "hint": "You want results from one site only. site:",
+      "answer_hash": "e10ba5e56d5e524881eab01735ef62f14025debb326acb42e1c9b13f3855b473"
+    },
+    {
+      "id": "c044",
+      "category": "OSINT",
+      "difficulty": "Easy",
+      "points": 10,
+      "title": "Shodan Purpose",
+      "desc": "What does Shodan primarily search for?\n\n  a) Social media profiles\n  b) Internet-connected devices and services\n  c) Dark web marketplaces\n  d) Email addresses\n\n  Enter the letter only.",
+      "hint": "It's called the 'search engine for hackers' — finds exposed devices.",
+      "answer_hash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    {
+      "id": "c045",
+      "category": "OSINT",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Wayback Machine",
+      "desc": "Which website allows you to view archived/old versions\n  of websites?\n\n  Enter the domain name only (no https or www).",
+      "hint": "It's run by the Internet Archive. Think: going back in time.",
+      "answer_hash": "c76cfdb07db8bae5a320e1e4de7410671f529974304dbdf06a8c7afdda07818a"
+    },
+    {
+      "id": "c046",
+      "category": "OSINT",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Username OSINT Tool",
+      "desc": "Which tool searches a username across 300+ social\n  media platforms at once?\n\n  Enter the tool name.",
+      "hint": "Sounds like a bird's call. Starts with 'S'.",
+      "answer_hash": "4bfbdf7ebee257ff0658b04db68feca37c7b68ef3f419b437efef43d3f5d84b6"
+    },
+    {
+      "id": "c047",
+      "category": "OSINT",
+      "difficulty": "Medium",
+      "points": 20,
+      "title": "Google Dork — File Type",
+      "desc": "Which Google dork finds only PDF files?\n\n  Enter the exact dork operator and value (e.g. xyz:pdf)",
+      "hint": "Operator: filetype: followed by the extension.",
+      "answer_hash": "8d222193ec69f306b2169e3067387ae6691d81082907a8badcfdb63e67b6c936"
+    },
+    {
+      "id": "c048",
+      "category": "OSINT",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Email Header OSINT",
+      "desc": "Which email header field reveals the ORIGINATING\n  IP address of the sender's mail server?\n\n  Enter the exact header name.",
+      "hint": "It shows the path the email traveled. Starts with 'Received'.",
+      "answer_hash": "318c5ad51e9b36ff5924ae323dd59031245413a3e0f2aa3e03cc42902e9e7acc"
+    },
+    {
+      "id": "c049",
+      "category": "OSINT",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "WHOIS Data",
+      "desc": "Which WHOIS field shows when a domain was first registered?\n\n  Enter the exact field name as it appears in WHOIS output.",
+      "hint": "Not expiry date. When was it created?",
+      "answer_hash": "1c2262bce6f6c8c6f94b5d121f933bc1bf6d8b5179dea2d07d31ccb1663e0f5f"
+    },
+    {
+      "id": "c050",
+      "category": "OSINT",
+      "difficulty": "Hard",
+      "points": 30,
+      "title": "Passive Recon Tool",
+      "desc": "Which tool performs passive subdomain enumeration\n  using certificate transparency logs?\n\n  Enter the tool name.",
+      "hint": "Related to certificates. Starts with 'subfinder' or think cert + sh.",
+      "answer_hash": "b05dfbbd58ecdb8d18100e6aa4da0c64aeca148d41971942a8e2068375063759"
     }
   ]
 }
