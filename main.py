@@ -1033,9 +1033,12 @@ def show_topics(phase, phases=None):
             tick = C.primary() + "\u2713" + C.RESET if done else C.muted() + "\u25cb" + C.RESET
             print("  " + bm + C.primary() + "[" + key + "]" + C.RESET + " " + tick + " " + topic["name"])
         divider()
-        playlist = phase.get("playlist", "")
+        playlist = phase.get("playlist", [])
+        if isinstance(playlist, str):
+            playlist = [playlist] if playlist.strip() else []
         if playlist:
-            print("  " + C.info() + "[v]" + C.RESET + " \U0001f4fa Watch Phase Playlist")
+            count_label = " (" + str(len(playlist)) + " videos)" if len(playlist) > 1 else ""
+            print("  " + C.info() + "[v]" + C.RESET + " \U0001f4fa Watch Phase Playlist" + C.muted() + count_label + C.RESET)
         else:
             print("  " + C.muted() + "[v] Playlist: not available" + C.RESET)
         divider()
@@ -1045,12 +1048,31 @@ def show_topics(phase, phases=None):
         choice = input("\n  Select Topic: ").strip().lower()
         if choice == "0": return
         elif choice == "v":
-            if playlist:
-                open_link(playlist, phase["name"] + " Playlist")
-                pause("Playlist opened. Press Enter...")
-            else:
+            if not playlist:
                 print("\n  " + C.highlight() + "No playlist available for this phase." + C.RESET)
                 pause("Press Enter...")
+            elif len(playlist) == 1:
+                open_link(playlist[0], phase["name"] + " Playlist")
+                pause("Opened. Press Enter...")
+            else:
+                # Multiple links — show numbered menu
+                while True:
+                    clear(); banner()
+                    print(C.info() + C.BOLD + "  \U0001f4fa " + phase["name"] + " — Playlist\n" + C.RESET)
+                    divider()
+                    for i, url in enumerate(playlist, 1):
+                        print("  " + C.primary() + "[" + str(i) + "]" + C.RESET + " Video " + str(i))
+                        print("      " + C.muted() + url + C.RESET)
+                    divider()
+                    print("  " + C.danger() + "[0]" + C.RESET + " Back")
+                    pick = input("\n  Select to open: ").strip()
+                    if pick == "0": break
+                    elif pick.isdigit() and 1 <= int(pick) <= len(playlist):
+                        open_link(playlist[int(pick)-1], "Video " + pick)
+                        pause("Opened. Press Enter...")
+                    else:
+                        print("\n  " + C.danger() + "Invalid choice." + C.RESET)
+                        pause("Press Enter...")
         elif choice in topics:
             topic_menu(topics[choice], phase_name=phase["name"], phases=phases)
         else:
@@ -1229,3 +1251,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
