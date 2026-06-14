@@ -52,8 +52,7 @@
               "macos": "https://netcat.sourceforge.net/",
               "linux_cmd": "sudo apt install -y netcat"
             }
-          ],
-          "tutorial": "https://youtu.be/e8iMt-VBPUU?si=4u5koNwfzZhwxSpV"
+          ]
         },
         "4": {
           "name": "IP Addressing & Subnetting",
@@ -68,8 +67,7 @@
               "macos": "https://jodies.de/ipcalc",
               "linux_cmd": "sudo apt install -y ipcalc"
             }
-          ],
-          "tutorial": "https://youtu.be/Pb6R1QCGMPY?si=qafuH7I_0T_uxVyT"
+          ]
         },
         "5": {
           "name": "DNS, DHCP, HTTP/HTTPS",
@@ -86,8 +84,7 @@
               "macos": "https://linux.die.net/man/1/dig",
               "linux_cmd": "sudo apt install -y dnsutils"
             }
-          ],
-          "tutorial": "https://youtu.be/n7kYogsTkVo?si=s30JlkrL6HqjTo32"
+          ]
         },
         "6": {
           "name": "Kali Linux Basics",
@@ -98,11 +95,15 @@
               "macos": "https://www.kali.org/get-kali/",
               "linux_cmd": "echo 'Already on Linux! Visit https://www.kali.org/get-kali/ for Kali'"
             }
-          ],
-          "tutorial": "https://youtu.be/sm8bCHyTBNg?si=MqopjKtxtNTEJT8X"
+          ]
         }
       },
-      "playlist": ""
+      "playlist": [
+        "https://youtu.be/e8iMt-VBPUU?si=4u5koNwfzZhwxSpV",
+        "https://youtu.be/Pb6R1QCGMPY?si=qafuH7I_0T_uxVyT",
+        "https://youtu.be/n7kYogsTkVo?si=s30JlkrL6HqjTo32",
+        "https://youtu.be/sm8bCHyTBNg?si=MqopjKtxtNTEJT8X"
+      ]
     },
     "2": {
       "name": "Programming & Scripting",
@@ -191,7 +192,9 @@
           ]
         }
       },
-      "playlist": "https://drive.google.com/drive/folders/1wUDoIye4AB-brXasstZvXMaPuT7BN_fk"
+      "playlist": [
+        "https://drive.google.com/drive/folders/1wUDoIye4AB-brXasstZvXMaPuT7BN_fk"
+      ]
     },
     "3": {
       "name": "Cybersecurity & Ethical Hacking Basics",
@@ -274,7 +277,9 @@
           ]
         }
       },
-      "playlist": "https://drive.google.com/drive/folders/1fs0HwmFdY451TlREy2rmN1yzSRV_GdVw"
+      "playlist": [
+        "https://drive.google.com/drive/folders/1fs0HwmFdY451TlREy2rmN1yzSRV_GdVw"
+      ]
     },
     "4": {
       "name": "Tools Mastery",
@@ -294,8 +299,7 @@
               "macos": "https://nmap.org/zenmap/",
               "linux_cmd": "sudo apt install -y zenmap"
             }
-          ],
-          "tutorial": "https://youtu.be/4t4kBkMsDbQ?si=GVGoIirUNkmsICfg"
+          ]
         },
         "2": {
           "name": "Burp Suite / OWASP ZAP",
@@ -312,8 +316,7 @@
               "macos": "https://www.zaproxy.org/download/",
               "linux_cmd": "sudo apt install -y zaproxy"
             }
-          ],
-          "tutorial": "https://www.youtube.com/live/rae9ZKEeKms?si=FuPcqonCPOWPJ02a"
+          ]
         },
         "3": {
           "name": "Metasploit Framework",
@@ -328,8 +331,7 @@
               "name": "Kali Linux (has Metasploit)",
               "all": "https://www.kali.org/get-kali/"
             }
-          ],
-          "tutorial": "https://youtu.be/xuYZNJCvHgQ?si=Q-0MhyysldBZuUIS"
+          ]
         },
         "4": {
           "name": "Hydra, John & Hashcat",
@@ -353,7 +355,6 @@
               "linux_cmd": "sudo apt install -y hydra"
             }
           ],
-          "tutorial": "https://youtu.be/z4_oqTZJqCo?si=n0uh12wqTDdJqbA9",
           "tool_tutorials": {
             "Hashcat": "https://youtu.be/z4_oqTZJqCo?si=n0uh12wqTDdJqbA9",
             "THC Hydra": "https://youtu.be/kadJLB2rYWo?si=fI9bBQae_srpWiIT",
@@ -369,11 +370,16 @@
               "macos": "https://www.aircrack-ng.org/downloads.html",
               "linux_cmd": "sudo apt install -y aircrack-ng"
             }
-          ],
-          "tutorial": "https://youtu.be/WfYxrLaqlN8?si=UAqccxuscsLQIEVG"
+          ]
         }
       },
-      "playlist": ""
+      "playlist": [
+        "https://youtu.be/4t4kBkMsDbQ?si=GVGoIirUNkmsICfg",
+        "https://www.youtube.com/live/rae9ZKEeKms?si=FuPcqonCPOWPJ02a",
+        "https://youtu.be/xuYZNJCvHgQ?si=Q-0MhyysldBZuUIS",
+        "https://youtu.be/z4_oqTZJqCo?si=n0uh12wqTDdJqbA9",
+        "https://youtu.be/WfYxrLaqlN8?si=UAqccxuscsLQIEVG"
+      ]
     },
     "5": {
       "name": "Web Application Penetration Testing",
@@ -471,7 +477,9 @@
           ]
         }
       },
-      "playlist": "https://tinyurl.com/yjf5frxy"
+      "playlist": [
+        "https://tinyurl.com/yjf5frxy"
+      ]
     },
     "6": {
       "name": "Network & System Penetration Testing",
@@ -562,7 +570,9 @@
           ]
         }
       },
-      "playlist": "https://drive.google.com/drive/folders/11JpMnLJcIMHw8M7v4MHhNB1LGUkYzWVE"
+      "playlist": [
+        "https://drive.google.com/drive/folders/11JpMnLJcIMHw8M7v4MHhNB1LGUkYzWVE"
+      ]
     },
     "7": {
       "name": "Bug Bounty Roadmap",
@@ -651,7 +661,9 @@
           ]
         }
       },
-      "playlist": "https://tinyurl.com/y7ntff2m"
+      "playlist": [
+        "https://tinyurl.com/y7ntff2m"
+      ]
     },
     "8": {
       "name": "OSINT Module",
@@ -729,7 +741,9 @@
           ]
         }
       },
-      "playlist": "https://drive.google.com/drive/folders/1j97ncaAQhADephGOwEQI35GileH9_aDq"
+      "playlist": [
+        "https://drive.google.com/drive/folders/1j97ncaAQhADephGOwEQI35GileH9_aDq"
+      ]
     },
     "9": {
       "name": "Ransomware & Malware Basics",
@@ -791,7 +805,9 @@
           ]
         }
       },
-      "playlist": "https://drive.google.com/drive/folders/10vmu7VmQX4Xr84VZo2FgSO2JKtitsZFW"
+      "playlist": [
+        "https://drive.google.com/drive/folders/10vmu7VmQX4Xr84VZo2FgSO2JKtitsZFW"
+      ]
     },
     "10": {
       "name": "Practice & Labs",
@@ -807,8 +823,7 @@
               "name": "TryHackMe Learning Paths",
               "all": "https://tryhackme.com/paths"
             }
-          ],
-          "tutorial": "https://youtu.be/AcHK0nNXtgo?si=tlpgDg27J4ISP1S_"
+          ]
         },
         "2": {
           "name": "Hack The Box",
@@ -821,8 +836,7 @@
               "name": "HTB Academy",
               "all": "https://academy.hackthebox.com/"
             }
-          ],
-          "tutorial": "https://youtu.be/jccqNN1jOgE?si=10zyFNhMdF87woK8"
+          ]
         },
         "3": {
           "name": "PortSwigger Web Security Academy",
@@ -872,7 +886,10 @@
           ]
         }
       },
-      "playlist": ""
+      "playlist": [
+        "https://youtu.be/AcHK0nNXtgo?si=tlpgDg27J4ISP1S_",
+        "https://youtu.be/jccqNN1jOgE?si=10zyFNhMdF87woK8"
+      ]
     },
     "11": {
       "name": "Certifications & Career Path",
@@ -888,8 +905,7 @@
               "name": "INE Free Starter Pass",
               "all": "https://my.ine.com/"
             }
-          ],
-          "tutorial": "https://youtu.be/fkMeisXS6B4?si=M5NoTYMp78u6MCwI"
+          ]
         },
         "2": {
           "name": "CEH Certification",
@@ -950,7 +966,141 @@
           ]
         }
       },
-      "playlist": ""
+      "playlist": [
+        "https://youtu.be/fkMeisXS6B4?si=M5NoTYMp78u6MCwI"
+      ]
+    },
+    "12": {
+      "name": "Advanced AI & LLMs with Math",
+      "playlist": [
+        "https://drive.google.com/drive/folders/1kUMK6jLWEIw6QbpZ4Y2MT_EHvvAEsH6U"
+      ],
+      "topics": {
+        "1": {
+          "name": "Transformer Architectures from Scratch",
+          "tools": []
+        },
+        "2": {
+          "name": "Multi-Head Attention Mechanisms",
+          "tools": []
+        },
+        "3": {
+          "name": "Cross-Entropy Loss & Token Probability",
+          "tools": []
+        },
+        "4": {
+          "name": "Gradient Descent & Backpropagation Math",
+          "tools": []
+        },
+        "5": {
+          "name": "Advanced Optimization (Adam, AdamW)",
+          "tools": []
+        },
+        "6": {
+          "name": "Fine-Tuning Math (LoRA & QLoRA)",
+          "tools": []
+        }
+      }
+    },
+    "13": {
+      "name": "SOC Analyst Training",
+      "playlist": [
+        "https://tinyurl.com/bdz5rtjs"
+      ],
+      "topics": {
+        "1": {
+          "name": "SOC Fundamentals: Threats, Attacks & Logs",
+          "tools": []
+        },
+        "2": {
+          "name": "Log Analysis (IDS/IPS, Endpoints, Servers)",
+          "tools": []
+        },
+        "3": {
+          "name": "SIEM Mastery: Splunk, ELK, OSSIM",
+          "tools": []
+        },
+        "4": {
+          "name": "Detection & Correlation Rules & Alert Triaging",
+          "tools": []
+        },
+        "5": {
+          "name": "Threat Intelligence & Incident Response",
+          "tools": []
+        },
+        "6": {
+          "name": "Threat Hunting with AI & Attacker Behavior",
+          "tools": []
+        },
+        "7": {
+          "name": "Malware Basics, Reporting & SOC Workflows",
+          "tools": []
+        }
+      }
+    },
+    "14": {
+      "name": "Advanced Python for CyberSecurity",
+      "playlist": [
+        "https://drive.google.com/drive/folders/1wUDoIye4AB-brXasstZvXMaPuT7BN_fk"
+      ],
+      "topics": {
+        "1": {
+          "name": "Python Scripting for CyberSecurity",
+          "tools": []
+        },
+        "2": {
+          "name": "Network Scanning Tools",
+          "tools": []
+        },
+        "3": {
+          "name": "OS Fingerprinting Concepts",
+          "tools": []
+        },
+        "4": {
+          "name": "Wi-Fi Analysis with Scapy",
+          "tools": []
+        },
+        "5": {
+          "name": "Security Automation Basics",
+          "tools": []
+        }
+      }
+    },
+    "15": {
+      "name": "IP Camera Security & Vulnerability Analysis",
+      "playlist": [
+        "https://drive.google.com/drive/folders/1NHlUOF4zbQZ8v2GbA-Lzx4JVxjzK9EXW"
+      ],
+      "topics": {
+        "1": {
+          "name": "IP Camera Systems & Architecture",
+          "tools": []
+        },
+        "2": {
+          "name": "Device Discovery: Google Dorks & Shodan",
+          "tools": []
+        },
+        "3": {
+          "name": "Network Scanning with Zenmap",
+          "tools": []
+        },
+        "4": {
+          "name": "Security Testing with Metasploit",
+          "tools": []
+        },
+        "5": {
+          "name": "Password Security & Cracking Concepts",
+          "tools": []
+        },
+        "6": {
+          "name": "HikVision & Dahua Vulnerability Analysis",
+          "tools": []
+        },
+        "7": {
+          "name": "Post-Exploitation & Security Research",
+          "tools": []
+        }
+      }
     }
   }
 }
